@@ -1,9 +1,18 @@
-# Solutions
+# Worked Solutions
 
-This folder is reserved for worked solutions.
+The solutions are grouped by the same levels as the exercises:
 
-A good teaching practice is:
+- `beginner/`
+- `lower-intermediate/`
+- `project-prep/`
 
-- try first without looking
-- compare your result with the provided answer
-- rewrite the solution in your own style
+Use them as study material, not as the first step.
+
+Recommended workflow:
+
+1. Read the exercise prompt.
+2. Build your own version.
+3. Compare structure, naming, and field choices with the worked answer.
+4. Rewrite the solution from memory.
+
+The programs are intentionally commented in a teaching style so you can see why each paragraph or field exists.

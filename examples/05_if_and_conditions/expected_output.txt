@@ -1,5 +1,22 @@
-Example run:
+========================================
+ PART 1: Simple IF / ELSE
+========================================
+Score : 072
+Result: PASSED
 
-Enter the student's grade (0-20):
-12
-Final result: PASSED
+========================================
+ PART 2: Nested IF
+========================================
+Score : 085
+Grade : GOOD
+
+========================================
+ PART 3: EVALUATE
+========================================
+Score : 042
+Grade : POOR
+
+========================================
+ PART 4: EVALUATE with exact values
+========================================
+Quarter: Q3 (Jul-Sep)

@@ -1,0 +1,32 @@
+=====================================================================
+              BANK ACCOUNT STATEMENT
+=====================================================================
+
+Account holder : MARIA SANTOS
+Account number : ACC-20260101
+Opening balance:  1,000.00
+
+Date         ID      Type      Amount    Balance   Description
+---------------------------------------------------------------------
+2026-03-01   TXN001  DEPOSIT  1,000.00   2,000.00  SALARY DEPOSIT
+2026-03-03   TXN002  WITHDRAW    45.00   1,955.00  GROCERY STORE
+2026-03-05   TXN003  WITHDRAW   120.00   1,835.00  ELECTRIC BILL
+2026-03-10   TXN004  DEPOSIT    250.00   2,085.00  FREELANCE WORK
+2026-03-12   TXN005  WITHDRAW    80.00   2,005.00  RESTAURANT
+2026-03-15   TXN006  DEPOSIT  1,000.00   3,005.00  SALARY DEPOSIT
+2026-03-18   TXN007  WITHDRAW   350.00   2,655.00  RENT PAYMENT
+2026-03-20   TXN008  WITHDRAW    65.00   2,590.00  PHONE BILL
+2026-03-25   TXN009  DEPOSIT     50.00   2,640.00  REFUND
+2026-03-28   TXN010  WITHDRAW   150.00   2,490.00  INSURANCE
+---------------------------------------------------------------------
+
+ACCOUNT SUMMARY
+
+  Total deposits     (04):   2,300.00
+  Total withdrawals  (06):     810.00
+                          ----------
+  Opening balance       :   1,000.00
+  Closing balance       :   2,490.00
+
+  Transactions processed: 10
+=====================================================================

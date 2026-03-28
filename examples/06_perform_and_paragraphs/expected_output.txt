@@ -1,7 +1,24 @@
-Example run:
+========================================
+ PART 1: Paragraph-based flow
+========================================
+Employee : MARIA SANTOS
+Base pay : 03200
+Bonus    : 00480
+Net pay  : 03680
 
-Enter the first number:
-15
-Enter the second number:
-27
-The total is: 00042
+========================================
+ PART 2: PERFORM 3 TIMES
+========================================
+--- separator line 1 ---
+--- separator line 2 ---
+--- separator line 3 ---
+
+========================================
+ PART 3: PERFORM UNTIL
+========================================
+Step 01: total is now 0001
+Step 02: total is now 0003
+Step 03: total is now 0006
+Step 04: total is now 0010
+Step 05: total is now 0015
+Final total: 0015

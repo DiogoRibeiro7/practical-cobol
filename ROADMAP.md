@@ -1,38 +1,47 @@
-# ROADMAP
+# Roadmap
 
-## v0.1
+## Release milestone
 
-- Repository scaffold
-- Hello world
-- Program structure
-- Variables and picture clauses
-- Input/output and arithmetic
+- [x] v1 educational release: coherent lesson path, exercises, docs, tooling, and first capstone projects
 
-## v0.2
+## Phase 1 — Beginner foundations (complete)
 
-- Conditions with `IF`
-- Reusable program flow with `PERFORM`
-- String formatting example
-- First sequential file processing lesson
-- Initial exercise set with solutions
+- [x] Repository scaffold and documentation
+- [x] Hello World
+- [x] Program structure and divisions
+- [x] Variables and picture clauses
+- [x] Input, output, and data movement
+- [x] Arithmetic operations
 
-## v0.3
+## Phase 2 — Control flow and formatting (complete)
 
-- `OCCURS` and tables
-- More sequential file exercises
-- Report generation with subtotals and totals
-- First mini-projects
+- [x] Conditions with `IF` and `ELSE`
+- [x] Paragraphs and `PERFORM`
+- [x] String formatting and edited picture clauses
+- [x] Tables and `OCCURS`
+- [x] First sequential file processing lesson
+- [x] Structured exercise system with lesson mapping and worked solutions
 
-## v0.4
+## Phase 3 — File processing and reporting (in progress)
 
-- Inventory report generator
-- Payroll processor
-- Bank ledger summarizer
-- CI scripts for example verification
+- [x] Writing sequential files (read-transform-write pattern)
+- [x] Summary report generation with classification and totals
+- [x] `EVALUATE` (covered in lesson 05 alongside IF)
+- [ ] Multi-file programs (read from two input files)
+- [ ] `STRING` and `UNSTRING` for text manipulation
 
-## v0.5
+## Phase 4 — Mini projects
 
-- Copybooks
-- Indexed files
-- Enterprise-style layouts
-- Historical notes on batch and mainframe workflows
+- [x] Payroll processor
+- [ ] Inventory summary report
+- [x] Bank ledger summarizer
+- [ ] Student records report
+- [x] CI scripts for automated example verification
+
+## Phase 5 — Intermediate topics (future)
+
+- [ ] Copybooks and code reuse
+- [ ] Indexed and relative files
+- [ ] Sorting with `SORT`
+- [ ] Enterprise-style record layouts
+- [ ] Historical context: batch processing and mainframe workflows

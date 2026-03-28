@@ -1,0 +1,17 @@
+===========================================
+ CLASS GRADE REPORT
+===========================================
+
+#  Name             Grade  Status
+-------------------------------------------
+1. ALICE JOHNSON      82  PASS
+2. BOB MARTINEZ       45  FAIL
+3. CAROL DAVIS        91  PASS
+4. DAVID CHEN         67  PASS
+5. EVA KOWALSKI       38  FAIL
+-------------------------------------------
+
+Total grades : 0323
+Average grade: 064
+Students who passed (>= 50): 3
+ of 5

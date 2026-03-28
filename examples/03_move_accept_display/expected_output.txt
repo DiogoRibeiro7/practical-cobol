@@ -1,2 +1,2 @@
-ENTER YOUR NAME: 
-YOU ENTERED: <USER INPUT>
+ENTER YOUR NAME:
+YOU ENTERED: <user input padded to 20 characters>

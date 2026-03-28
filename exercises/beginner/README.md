@@ -1,11 +1,10 @@
-# Beginner exercises
+# Beginner Exercises
 
-Suggested early exercises:
+These exercises reinforce the early lessons without requiring advanced COBOL features. They are not one-line drills: each one asks you to think about field sizes, intermediate values, and output clarity.
 
-1. Print your name and age.
-2. Read two numbers and display their sum.
-3. Read a score and display whether it is pass or fail.
-4. Compute the area of a rectangle.
-5. Read a salary and display a 10% bonus value.
+Recommended order:
 
-Try solving them after completing the first lessons.
+1. `ex01_customer_profile_card.md`
+2. `ex02_overtime_pay_estimator.md`
+
+Try to write a complete program for each exercise before comparing with the worked solution.

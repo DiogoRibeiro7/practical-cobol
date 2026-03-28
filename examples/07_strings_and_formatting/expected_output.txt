@@ -1,2 +1,24 @@
-Customer: ANA SILVA
-Balance : 1,523.40
+============================================
+       CUSTOMER ACCOUNT SUMMARY
+============================================
+
+Account : 10045782
+Name    : ANA SILVA
+Status  : ACTIVE
+Balance : $1,523.40
+
+============================================
+       PURCHASE RECEIPT
+============================================
+
+Item                  Qty   Price     Amount
+--------------------------------------------
+Office Supplies        3    12.50       37.50
+Printer Paper         10     8.75       87.50
+Toner Cartridge        2    45.00       90.00
+--------------------------------------------
+                         Subtotal:    215.00
+                         Tax (8%):     17.20
+                         TOTAL  :    232.20
+
+Thank you for your purchase!
