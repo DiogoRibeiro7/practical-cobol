@@ -26,6 +26,9 @@ jobs:
       - name: Compile all examples
         run: bash scripts/check_examples.sh
 
+      - name: Compile all exercises
+        run: bash scripts/check_exercises.sh
+
   compile-examples-windows:
     runs-on: windows-latest
 
@@ -43,3 +46,6 @@ jobs:
 
       - name: Compile all examples
         run: bash -lc "scripts/check_examples.sh"
+
+      - name: Compile all exercises
+        run: bash -lc "scripts/check_exercises.sh"
