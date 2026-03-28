@@ -1,0 +1,7 @@
+Example run:
+
+Enter the first number:
+15
+Enter the second number:
+27
+The total is: 00042

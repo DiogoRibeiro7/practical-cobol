@@ -1,0 +1,3 @@
+NAME  : ALICE               
+AGE   : 027
+SCORE : 095

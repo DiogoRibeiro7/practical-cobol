@@ -1,0 +1,5 @@
+Example run:
+
+Enter the student's grade (0-20):
+12
+Final result: PASSED
