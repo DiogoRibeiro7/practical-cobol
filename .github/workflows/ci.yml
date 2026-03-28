@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - develop
   pull_request:
 
 jobs:
@@ -14,7 +15,7 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Install GnuCOBOL
+      - name: Install GnuCOBOL (Ubuntu)
         run: |
           sudo apt-get update
           sudo apt-get install -y gnucobol
@@ -24,3 +25,21 @@ jobs:
 
       - name: Compile all examples
         run: bash scripts/check_examples.sh
+
+  compile-examples-windows:
+    runs-on: windows-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Install GnuCOBOL (Windows via Chocolatey)
+        shell: powershell
+        run: |
+          choco install -y gnucobol
+
+      - name: Compile beginner examples
+        run: bash -lc "scripts/compile_beginner_examples.sh"
+
+      - name: Compile all examples
+        run: bash -lc "scripts/check_examples.sh"

@@ -70,6 +70,17 @@ A good pull request should:
 - Include updated `expected_output.txt` if the code changed
 - Not break existing lessons
 
+## Quick contributor checklist
+
+Before opening a pull request, confirm the following:
+
+- [ ] The lesson or exercise is aligned with the educational goals and progression.
+- [ ] `examples/NN_lesson_name` includes `README.md`, `main.cob`, `expected_output.txt`, and `notes.md`.
+- [ ] If you’re adding an exercise, include both the prompt and solution under `exercises/`.
+- [ ] Code compiles with `scripts/check_examples.sh` locally.
+- [ ] Documentation is updated (`README`, `docs/`, or `CONTRIBUTING.md`) as needed.
+- [ ] The PR describes what changed, why, and how to verify it.
+
 ## Ideas for contributions
 
 - New exercises for existing lessons
