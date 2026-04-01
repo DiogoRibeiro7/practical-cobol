@@ -35,18 +35,59 @@ brew install gnu-cobol
 
 ## Windows
 
-The simplest learning setup is usually **WSL with Ubuntu**.
+### Option 1: WSL (recommended)
 
-Typical path:
+1. Open PowerShell as Administrator and run:
 
-1. install WSL
-2. install Ubuntu from the Microsoft Store
-3. open the Ubuntu terminal
-4. run the Debian/Ubuntu install commands from this page
+```powershell
+wsl --install
+```
 
-This keeps the environment close to the Linux commands used in the repository.
+2. Reboot if requested.
+3. Install Ubuntu from Microsoft Store.
+4. Open the Ubuntu terminal and run:
 
-Another option is an MSYS2 or MinGW-based GnuCOBOL environment, but WSL is usually easier for beginners to follow.
+```bash
+sudo apt update
+sudo apt install gnucobol
+```
+
+5. Verify in WSL:
+
+```bash
+cobc -V
+```
+
+6. Work inside the Linux path (e.g., `cd /mnt/c/Users/you/work_code/practical-cobol`) and use the same scripts as Linux.
+
+### Option 2: MSYS2 / MinGW
+
+1. Install MSYS2: https://www.msys2.org/
+2. Run `pacman -Syu` and restart MSYS2.
+3. Install GnuCOBOL:
+
+```bash
+pacman -S mingw-w64-x86_64-gnucobol
+```
+
+4. Use the `mingw64` shell and verify with `cobc -V`.
+
+### Option 3: Windows-native (Chocolatey)
+
+1. Install Chocolatey: https://chocolatey.org/install
+2. Run:
+
+```powershell
+choco install -y gnucobol
+```
+
+3. Close and reopen terminal, then run:
+
+```powershell
+cobc -V
+```
+
+> Note: Windows path handling may differ from Linux/WSL. If `./hello` fails, check for `hello.exe` and run it as `./hello.exe`.
 
 ## Confirm the compiler
 
