@@ -1,0 +1,10 @@
+Multi-file sales summary program
+Q1 P001 qty=05 price=120 ext=600
+Q2 P004 qty=04 price=700 ext=2800
+Q1 P002 qty=08 price=150 ext=1200
+Q2 P005 qty=02 price=550 ext=1100
+Q1 P003 qty=03 price=100 ext=300
+-------------------------------------------
+Q1 records: 3  subtotal=2100
+Q2 records: 2  subtotal=3900
+Grand total: 6000
