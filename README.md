@@ -73,6 +73,7 @@ Start at lesson 00 and work through them in order. Each lesson builds on the pre
 | 10 | Writing Sequential Files | `OPEN OUTPUT`, `WRITE`, read-transform-write |
 | 11 | File-Based Summary Report | Classification, accumulators, formatted reports |
 | 12 | Mini Projects | Project bridge and capstone guidance |
+| 13 | Sort and Merge Processing | Sort file records and merge pre-sorted sources |
 
 Quick navigation:
 
@@ -81,6 +82,7 @@ Quick navigation:
 - [Lesson 09](examples/09_sequential_files/README.md)
 - [Lesson 11](examples/11_summary_report/README.md)
 - [Mini Projects](examples/12_mini_projects/README.md)
+- [Sort and Merge Processing](examples/13_sort_merge/README.md)
 - [Projects Hub](projects/README.md)
 - [Exercises](exercises/README.md)
 - [Reference Docs](docs/)

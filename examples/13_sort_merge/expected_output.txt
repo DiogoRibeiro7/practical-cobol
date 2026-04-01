@@ -1,0 +1,2 @@
+SORT complete: data/sorted_output.dat
+MERGE complete: data/merged_output.dat
