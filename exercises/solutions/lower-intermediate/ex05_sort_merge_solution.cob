@@ -1,31 +1,30 @@
       *> -------------------------------------------------------
-      *> Lesson 13 - Sort and Merge Processing
-      *> Demonstrates COBOL SORT and MERGE verbs with sequential files.
+      *> EX05 - Sort and Merge solution
       *> -------------------------------------------------------
        IDENTIFICATION DIVISION.
-       PROGRAM-ID. SORT-MERGE-EXAMPLE.
+       PROGRAM-ID. EX05-SORT-MERGE-SOLUTION.
 
        ENVIRONMENT DIVISION.
        INPUT-OUTPUT SECTION.
        FILE-CONTROL.
            SELECT SORT-IN-FILE
-               ASSIGN TO "data/sort_input.dat"
+               ASSIGN TO "examples/13_sort_merge/data/sort_input.dat"
                ORGANIZATION IS LINE SEQUENTIAL.
 
            SELECT MERGE-A-FILE
-               ASSIGN TO "data/merge_a.dat"
+               ASSIGN TO "examples/13_sort_merge/data/merge_a.dat"
                ORGANIZATION IS LINE SEQUENTIAL.
 
            SELECT MERGE-B-FILE
-               ASSIGN TO "data/merge_b.dat"
+               ASSIGN TO "examples/13_sort_merge/data/merge_b.dat"
                ORGANIZATION IS LINE SEQUENTIAL.
 
            SELECT SORT-OUT-FILE
-               ASSIGN TO "data/sorted_output.dat"
+               ASSIGN TO "examples/13_sort_merge/data/sorted_output.dat"
                ORGANIZATION IS LINE SEQUENTIAL.
 
            SELECT MERGE-OUT-FILE
-               ASSIGN TO "data/merged_output.dat"
+               ASSIGN TO "examples/13_sort_merge/data/merged_output.dat"
                ORGANIZATION IS LINE SEQUENTIAL.
 
            SELECT SORT-FILE
@@ -76,7 +75,6 @@
            05 MERGE-FILE-NAME PIC X(20).
 
        WORKING-STORAGE SECTION.
-
        01 WS-EOF.
            05 WS-EOF-SORT       PIC X VALUE "N".
            05 WS-EOF-MERGE-A    PIC X VALUE "N".
@@ -120,7 +118,7 @@
                END-RETURN
            END-PERFORM
            CLOSE SORT-OUT-FILE
-           DISPLAY "SORT complete: data/sorted_output.dat".
+           DISPLAY "SORT complete: examples/13_sort_merge/data/sorted_output.dat".
 
        MERGE-PROCESS.
            MERGE MERGE-FILE
@@ -164,4 +162,4 @@
                END-RETURN
            END-PERFORM
            CLOSE MERGE-OUT-FILE
-           DISPLAY "MERGE complete: data/merged_output.dat".
+           DISPLAY "MERGE complete: examples/13_sort_merge/data/merged_output.dat".

@@ -29,6 +29,9 @@ jobs:
       - name: Compile all exercises
         run: bash scripts/check_exercises.sh
 
+      - name: COBOL lint
+        run: bash scripts/lint_cobol.sh
+
       - name: Check markdown links
         run: bash scripts/check_links.sh
 
@@ -52,6 +55,9 @@ jobs:
 
       - name: Compile all exercises
         run: bash -lc "scripts/check_exercises.sh"
+
+      - name: COBOL lint
+        run: bash -lc "scripts/lint_cobol.sh"
 
       - name: Check markdown links
         run: bash -lc "scripts/check_links.sh"

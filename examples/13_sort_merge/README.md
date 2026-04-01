@@ -15,8 +15,18 @@ Learn COBOL `SORT` and `MERGE` verbs with sequential files: sort an unsorted fil
 
 ## Data files
 
-- `data/sort_input.dat`: unsorted names with numeric keys
-- `data/merge_a.dat` and `data/merge_b.dat`: pre-sorted key/name pairs
+- `data/sort_input.dat`: unsorted key/name rows (3-digit ID + fixed 20-char name)
+- `data/merge_a.dat`, `data/merge_b.dat`: pre-sorted key/name rows
+- `data/sorted_output.dat`: generated sorted output from `SORT` run
+- `data/merged_output.dat`: generated merged output from `MERGE` run
+
+Example record format (fixed width 23 chars):
+
+```
+001 Alice               
+003 Charlie            
+002 Bob                
+```
 
 ## Code
 
@@ -25,11 +35,11 @@ See `main.cob` for the full implementation.
 ## Walkthrough
 
 1. `SORT-PROCESS` calls `SORT` on `SORT-FILE` using key `SORT-FILE-ID`.
-2. `SORT-INPUT` reads the unsorted source file and issues `RELEASE` for each record.
-3. `SORT-OUTPUT` uses `RETURN` to get sorted records and writes to `sorted_output.dat`.
-4. `MERGE-PROCESS` calls `MERGE` on `MERGE-FILE` with the same key.
-5. `MERGE-INPUT` reads both source files and releases records.
-6. `MERGE-OUTPUT` returns merged output into `merged_output.dat`.
+2. `SORT-INPUT` reads `data/sort_input.dat` and issues `RELEASE` for each record.
+3. `SORT-OUTPUT` uses `RETURN` to read sorted records and writes `data/sorted_output.dat`.
+4. `MERGE-PROCESS` calls `MERGE` on `MERGE-FILE` keyed by `MERGE-FILE-ID`.
+5. `MERGE-INPUT` reads `data/merge_a.dat` and `data/merge_b.dat` and releases each record.
+6. `MERGE-OUTPUT` uses `RETURN` to write to `data/merged_output.dat`.
 
 ## How to compile and run
 
@@ -41,9 +51,37 @@ cd examples/13_sort_merge
 ./sortmerge
 ```
 
+## Validation and tests
+
+1. Compile and run as above.
+2. Confirm output messages in the terminal:
+
+```txt
+SORT complete: data/sorted_output.dat
+MERGE complete: data/merged_output.dat
+```
+
+3. Verify output files are created:
+
+```bash
+cat data/sorted_output.dat
+cat data/merged_output.dat
+```
+
+4. Compare against expected baseline results:
+
+```bash
+diff -u examples/13_sort_merge/expected_output.txt <(printf "%s\n" "SORT complete: data/sorted_output.dat" "MERGE complete: data/merged_output.dat")
+```
+
 ## Expected output
 
-See `expected_output.txt`.
+`examples/13_sort_merge/expected_output.txt`:
+
+```
+SORT complete: data/sorted_output.dat
+MERGE complete: data/merged_output.dat
+```
 
 ## Exercises
 
