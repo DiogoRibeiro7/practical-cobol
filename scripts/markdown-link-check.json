@@ -1,0 +1,9 @@
+{
+  "ignorePatterns": [
+    "^https://example.com",
+    "^mailto:"
+  ],
+  "alive": true,
+  "timeout": 10000,
+  "retry": 2
+}

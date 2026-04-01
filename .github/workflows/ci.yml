@@ -29,6 +29,9 @@ jobs:
       - name: Compile all exercises
         run: bash scripts/check_exercises.sh
 
+      - name: Check markdown links
+        run: bash scripts/check_links.sh
+
   compile-examples-windows:
     runs-on: windows-latest
 
@@ -49,3 +52,6 @@ jobs:
 
       - name: Compile all exercises
         run: bash -lc "scripts/check_exercises.sh"
+
+      - name: Check markdown links
+        run: bash -lc "scripts/check_links.sh"
