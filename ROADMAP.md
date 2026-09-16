@@ -6,52 +6,39 @@
 
 ## Phase 1 — Beginner foundations (complete)
 
-- [x] Repository scaffold and documentation
-- [x] Hello World
-- [x] Program structure and divisions
-- [x] Variables and picture clauses
-- [x] Input, output, and data movement
-- [x] Arithmetic operations
+- [x] Core program structure, variables, input/output, arithmetic
+- [x] Conditions, `PERFORM`, formatting, tables
+- [x] Sequential file processing and summary reporting
+- [x] Structured exercises and worked solutions
 
-## Phase 2 — Control flow and formatting (complete)
+## Phase 2 — Applied batch processing (complete)
 
-- [x] Conditions with `IF` and `ELSE`
-- [x] Paragraphs and `PERFORM`
-- [x] String formatting and edited picture clauses
-- [x] Tables and `OCCURS`
-- [x] First sequential file processing lesson
-- [x] Structured exercise system with lesson mapping and worked solutions
+- [x] Read-transform-write sequential processing
+- [x] Sort and merge processing (lesson 13)
+- [x] Multi-file programs (lesson 14)
+- [x] Payroll and bank-ledger capstones
+- [x] Compile/lint/link validation in CI
 
-## Phase 3 — File processing and reporting (in progress)
+## Phase 3 — Reuse and keyed data access (in progress)
 
-- [x] Writing sequential files (read-transform-write pattern)
-- [x] Summary report generation with classification and totals
-- [x] `EVALUATE` (covered in lesson 05 alongside IF)
-- [x] Multi-file programs (lesson 14 reads two independent input files)
-- [ ] `STRING` and `UNSTRING` for text manipulation
-
-## Phase 4 — Mini projects
-
-- [x] Payroll processor
-- [ ] Inventory summary report
-- [x] Bank ledger summarizer
-- [ ] Student records report
-- [x] CI scripts for automated example verification
-
-## Phase 5 — Reuse and enterprise-style patterns (in progress)
-
-- [x] Sorting and merging records with `SORT` / `MERGE` (lesson 13)
 - [x] Copybooks and shared record layouts (lesson 15)
-- [ ] Indexed files
+- [x] Indexed files and direct keyed lookup (lesson 16)
 - [ ] Relative files
-- [ ] Enterprise-style record layouts with validation and versioning guidance
-- [ ] Historical context: batch processing, job control, and mainframe workflows
+- [ ] `STRING` and `UNSTRING` for text parsing
+- [ ] Enterprise-style record versioning and compatibility guidance
 
-## Phase 6 — Portfolio-grade batch system (future)
+## Phase 4 — Portfolio-grade batch system (future)
 
 - [ ] Multi-program reconciliation capstone
 - [ ] Shared copybooks across producer and consumer programs
-- [ ] Input validation with accepted/rejected record outputs
+- [ ] Accepted/rejected record outputs
 - [ ] Control totals and reconciliation invariants
 - [ ] Restart/re-run behaviour and idempotent batch design
 - [ ] Architecture and operations documentation
+
+## Phase 5 — Legacy platform context (future)
+
+- [ ] Batch-processing history and operating model
+- [ ] JCL concepts and job-step orchestration
+- [ ] VSAM concepts mapped to portable GnuCOBOL examples
+- [ ] Migration patterns from file-oriented COBOL workloads to modern data platforms
