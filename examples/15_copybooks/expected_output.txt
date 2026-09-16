@@ -1,0 +1,11 @@
+COPYBOOK TRANSACTION SUMMARY
+========================================
+Records read          : 05
+Accepted transactions : 04
+Rejected transactions : 01
+Deposits              : 02
+Withdrawals           : 02
+Total deposits        :     200.50
+Total withdrawals     :      65.50
+Closing balance       :    1,135.00
+========================================
