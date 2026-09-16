@@ -11,7 +11,7 @@ If you are new to the repository, follow this order:
 3. Continue through the core lesson sequence in `examples/` from 00 to 11.
 4. Practice with [exercises/README.md](exercises/README.md).
 5. Move to [examples/12_mini_projects/README.md](examples/12_mini_projects/README.md) and then [projects/README.md](projects/README.md).
-6. Continue with lessons 13 to 16 for sort/merge processing, multi-file input, copybooks, and indexed access.
+6. Continue with lessons 13 to 17 for sort/merge processing, multi-file input, copybooks, indexed access, and relative files.
 
 ## Learning path
 
@@ -34,6 +34,7 @@ If you are new to the repository, follow this order:
 | 14 | Multi-file Sequential Input | Process multiple input streams |
 | 15 | Copybooks and Shared Layouts | Shared fixed-width record contracts |
 | 16 | Indexed Files | Direct keyed lookup, `RECORD KEY`, and `FILE STATUS` |
+| 17 | Relative Files | Direct access by relative record number and sparse slots |
 
 ## Intermediate engineering track
 
@@ -44,7 +45,8 @@ Lessons 13 onward deliberately move beyond syntax into patterns found in long-li
 - shared copybooks
 - explicit control totals
 - indexed master records
-- direct keyed reads
+- relative record files
+- direct keyed and positional reads
 - observable I/O state through `FILE STATUS`
 
 The goal is not to imitate a specific mainframe stack. It is to make the underlying data-processing and reliability patterns inspectable with GnuCOBOL.
@@ -55,6 +57,7 @@ The goal is not to imitate a specific mainframe stack. It is to make the underly
 - [Lesson 14 — Multi-file Input](examples/14_multi_file/README.md)
 - [Lesson 15 — Copybooks](examples/15_copybooks/README.md)
 - [Lesson 16 — Indexed Files](examples/16_indexed_files/README.md)
+- [Lesson 17 — Relative Files](examples/17_relative_files/README.md)
 - [Projects](projects/README.md)
 - [Exercises](exercises/README.md)
 - [Setup](docs/setup.md)
@@ -84,7 +87,7 @@ GitHub Actions runs the compile and quality checks on pull requests and on pushe
 
 ```text
 practical-cobol/
-├── examples/          Step-by-step lessons (00 through 16)
+├── examples/          Step-by-step lessons (00 through 17)
 ├── exercises/         Structured practice with worked solutions
 ├── projects/          Capstone-style business programs
 ├── docs/              Setup and reference documentation
@@ -95,6 +98,8 @@ practical-cobol/
 ## Projects
 
 The capstone track includes payroll and bank-ledger processing, with additional project scaffolds under [projects/](projects/README.md).
+
+The next major development target is a multi-program reconciliation system rather than additional isolated language lessons.
 
 ## Release status
 
