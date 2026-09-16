@@ -1,0 +1,3 @@
+Indexed customer master created: 03 records
+Lookup C0002: BRUNO SILVA          status=A balance=     875.25
+Lookup C9999: not found, file status=23

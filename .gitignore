@@ -10,6 +10,9 @@
 *.idy
 *.int
 
+# Generated indexed/relative file storage
+examples/16_indexed_files/data/customer-master*
+
 # macOS
 .DS_Store
 
