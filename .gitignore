@@ -12,6 +12,7 @@
 
 # Generated indexed/relative file storage
 examples/16_indexed_files/data/customer-master*
+examples/17_relative_files/data/customer-slots*
 
 # macOS
 .DS_Store

@@ -1,0 +1,6 @@
+RELATIVE CUSTOMER FILE
+========================================
+RRN 0003 -> C00003 BRUNO SILVA          STATUS=A FILE-STATUS=00
+RRN 0002 -> EMPTY SLOT, FILE-STATUS=23
+RRN 0005 -> C00005 CARLA SOUSA          STATUS=I FILE-STATUS=00
+========================================

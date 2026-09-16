@@ -19,15 +19,15 @@
 - [x] Payroll and bank-ledger capstones
 - [x] Compile/lint/link validation in CI
 
-## Phase 3 — Reuse and keyed data access (in progress)
+## Phase 3 — Reuse and keyed data access (complete)
 
 - [x] Copybooks and shared record layouts (lesson 15)
 - [x] Indexed files and direct keyed lookup (lesson 16)
-- [ ] Relative files
-- [ ] `STRING` and `UNSTRING` for text parsing
-- [ ] Enterprise-style record versioning and compatibility guidance
+- [x] Relative files and positional lookup (lesson 17)
 
-## Phase 4 — Portfolio-grade batch system (future)
+Further isolated syntax topics such as `STRING` / `UNSTRING` can be added only when a concrete project requires them. They are no longer blockers for the engineering track.
+
+## Phase 4 — Portfolio-grade batch system (next)
 
 - [ ] Multi-program reconciliation capstone
 - [ ] Shared copybooks across producer and consumer programs
@@ -36,7 +36,7 @@
 - [ ] Restart/re-run behaviour and idempotent batch design
 - [ ] Architecture and operations documentation
 
-## Phase 5 — Legacy platform context (future)
+## Phase 5 — Legacy platform context (later)
 
 - [ ] Batch-processing history and operating model
 - [ ] JCL concepts and job-step orchestration
