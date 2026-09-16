@@ -4,14 +4,14 @@ set -euo pipefail
 script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 repo_root="$(cd "$script_dir/.." && pwd)"
 
-echo "Linting COBOL source files..."
+echo "Linting COBOL source and copybook files..."
 
-# Find all .cob files in lessons, exercises, projects.
+# Check executable COBOL source plus shared copybook definitions.
 IFS=$'\n'
-cob_files=($(find "$repo_root" -type f -name "*.cob"))
+cob_files=($(find "$repo_root" -type f \( -name "*.cob" -o -name "*.cpy" \)))
 
 if [ ${#cob_files[@]} -eq 0 ]; then
-  echo "No COBOL source files found."
+  echo "No COBOL source or copybook files found."
   exit 0
 fi
 

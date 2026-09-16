@@ -1,5 +1,19 @@
 # Release Notes
 
+## Unreleased
+
+Development after `v1.0.0` extends the course from core language skills into intermediate batch-processing and record-contract patterns.
+
+### Added
+
+- lesson 13: sort and merge processing
+- lesson 14: multi-file sequential input
+- lesson 15: copybooks and shared record layouts
+- compile-time validation for copybook-backed examples
+- COBOL lint coverage for both `.cob` source files and `.cpy` copybooks
+
+These additions are intended to bridge the gap between introductory COBOL syntax and the engineering patterns found in long-lived business systems.
+
 ## v1.0.0
 
 `practical-cobol` now ships as a coherent self-study course rather than a loose set of example folders.
@@ -21,14 +35,14 @@
 - move learners from tiny programs to file-driven reports
 - stay small enough to be consistent and maintainable
 
-### What is intentionally still out of scope
+### What was intentionally out of scope at v1.0.0
 
 - copybooks and enterprise code reuse patterns
 - indexed files and relative files
 - sort/merge workflows
 - large multi-file business systems
 
-That work belongs in a later release once the current teaching path is fully stable.
+Post-v1 development can add those capabilities without changing the scope of the original release.
 
 ## v0.2
 

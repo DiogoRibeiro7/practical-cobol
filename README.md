@@ -1,6 +1,6 @@
 # Practical COBOL
 
-A hands-on course to learn COBOL from zero to practical business-style programs.
+A hands-on course that moves from core COBOL syntax to practical batch processing, file-driven business programs, and reusable record layouts.
 
 ## Start Here
 
@@ -8,9 +8,10 @@ If you are new to the repository, follow this order:
 
 1. Read [docs/setup.md](docs/setup.md) and make sure `cobc` works.
 2. Run [examples/00_hello_world/README.md](examples/00_hello_world/README.md).
-3. Continue through the lesson sequence in `examples/` from 00 to 11.
+3. Continue through the core lesson sequence in `examples/` from 00 to 11.
 4. Practice with [exercises/README.md](exercises/README.md).
 5. Move to [examples/12_mini_projects/README.md](examples/12_mini_projects/README.md) and then [projects/README.md](projects/README.md).
+6. Continue with lessons 13 to 15 for sort/merge processing, multi-file input, and copybook-based record reuse.
 
 If you only want the shortest path into the material, start with lesson 00, then work forward in order without skipping.
 
@@ -32,11 +33,14 @@ By working through the lessons in order, you will learn to:
 - Format output with edited picture clauses
 - Store data in tables with `OCCURS`
 - Read and process sequential files
-- Build small business-style reporting programs
+- Sort and merge business records
+- Process more than one input file in a batch program
+- Share record definitions with copybooks
+- Build small business-style reporting programs with control totals
 
 ## Suggested Study Order
 
-Use the repository in four passes:
+Use the repository in five passes:
 
 1. **Core syntax**
    Lessons 00 to 04. Learn program structure, fields, input, output, and arithmetic.
@@ -45,7 +49,9 @@ Use the repository in four passes:
 3. **File processing**
    Lessons 09 to 11. Learn sequential files, output files, and summary reports.
 4. **Applied practice**
-   Use [exercises/README.md](exercises/README.md), then continue to [projects/README.md](projects/README.md).
+   Use lesson 12, [exercises/README.md](exercises/README.md), and [projects/README.md](projects/README.md).
+5. **Intermediate batch patterns**
+   Lessons 13 to 15. Learn sort/merge processing, multi-file input, and shared record contracts with copybooks.
 
 Recommended checkpoints:
 
@@ -53,6 +59,7 @@ Recommended checkpoints:
 - After lesson 06, add the `lower-intermediate` exercises.
 - After lesson 09, begin the `project-prep` exercises.
 - After lesson 11, start with the payroll project.
+- After lesson 15, revisit the capstones and refactor repeated record layouts into copybooks.
 
 ## Learning path
 
@@ -74,6 +81,8 @@ Start at lesson 00 and work through them in order. Each lesson builds on the pre
 | 11 | File-Based Summary Report | Classification, accumulators, formatted reports |
 | 12 | Mini Projects | Project bridge and capstone guidance |
 | 13 | Sort and Merge Processing | Sort file records and merge pre-sorted sources |
+| 14 | Multi-file Sequential Input | Read two input streams and produce a combined summary |
+| 15 | Copybooks and Shared Layouts | Reuse fixed-width record contracts with `COPY` |
 
 Quick navigation:
 
@@ -83,6 +92,8 @@ Quick navigation:
 - [Lesson 11](examples/11_summary_report/README.md)
 - [Mini Projects](examples/12_mini_projects/README.md)
 - [Sort and Merge Processing](examples/13_sort_merge/README.md)
+- [Multi-file Sequential Input](examples/14_multi_file/README.md)
+- [Copybooks and Shared Layouts](examples/15_copybooks/README.md)
 - [Projects Hub](projects/README.md)
 - [Exercises](exercises/README.md)
 - [Reference Docs](docs/)
@@ -114,12 +125,13 @@ On Windows, use WSL with Ubuntu or an MSYS2-based GnuCOBOL environment.
 
 ## Running the examples
 
-Each lesson lives in its own folder under `examples/`. Every folder contains:
+Each lesson lives in its own folder under `examples/`. Lesson folders generally contain:
 
 - `README.md` — lesson explanation, code walkthrough, and exercises
 - `main.cob` — the COBOL source code
 - `expected_output.txt` — what the program should print
 - `notes.md` — terminology, common mistakes, and comparisons with modern languages
+- optional `data/` or `copybooks/` directories when the lesson needs external records or shared layouts
 
 To compile and run any lesson:
 
@@ -159,6 +171,20 @@ The repository now includes a small capstone track under [projects/README.md](pr
 - [projects/bank-ledger/README.md](projects/bank-ledger/README.md) is the next best follow-up.
 - The remaining project folders are intentionally lighter-weight scaffolds for further practice.
 
+## Engineering patterns demonstrated
+
+The later lessons deliberately move beyond syntax. They expose patterns that matter in long-lived business systems:
+
+- fixed-width record contracts
+- batch-oriented file processing
+- sort and merge workflows
+- independent input streams
+- reusable copybook definitions
+- accepted/rejected record counts
+- financial control totals and closing balances
+
+The goal is not to imitate a mainframe environment. It is to make the data-processing model and engineering discipline behind enterprise COBOL inspectable with GnuCOBOL.
+
 ## Maintainer validation
 
 Maintainers can validate lessons with a few small scripts:
@@ -183,7 +209,7 @@ The GitHub Actions workflow uses the same idea on Ubuntu: install GnuCOBOL, comp
 
 ```text
 practical-cobol/
-├── examples/          Step-by-step lessons (00 through 12)
+├── examples/          Step-by-step lessons (00 through 15)
 ├── exercises/         Structured practice track with worked solutions
 ├── projects/          Capstone-style programs and guided project scaffolds
 ├── docs/              Setup guide and concept references
@@ -193,11 +219,11 @@ practical-cobol/
 
 ## Release status
 
-This repository is prepared as a `v1` educational release. See [docs/releases.md](docs/releases.md) for the release summary and scope.
+This repository is prepared as a `v1` educational release, with post-v1 intermediate lessons continuing on `develop`. See [docs/releases.md](docs/releases.md) for the release summary and current unreleased scope.
 
 ## Why COBOL?
 
-COBOL powers critical systems in banking, insurance, government, and large enterprises. Many online resources jump straight into mainframe-specific tooling. This repository focuses on the language itself and gradually builds toward the business-data mindset that made COBOL important.
+COBOL remains important because many critical systems are built around stable record layouts, batch processing, explicit business rules, and long-lived data contracts. Many learning resources either stop at syntax or jump straight into vendor-specific mainframe tooling. This repository focuses first on the language and then on the transferable engineering patterns behind those systems.
 
 ## Contributing
 
